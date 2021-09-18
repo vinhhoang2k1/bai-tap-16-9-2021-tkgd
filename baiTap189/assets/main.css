@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: #999;
+}
+.app {
+  width: 1100px;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+.nav {
+  /* height: 200px; */
+  background-image: url("https://kcorp.vn/baisomuoi/image/flywheel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nav__heading {
+  font-size: 35px;
+  color: #fff;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.nav__menu {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+
+.menu-item {
+  display: block;
+  text-align: center;
+  margin: 50px 0;
+  width: 200px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+.menu-item a {
+    display: block;
+    width: 100%;
+    line-height: 50px;
+    font-size: 20px;
+    color:rgba(128, 123, 123, 0.9);
+}
+.menu-item:hover {
+    transform: rotate(30deg);
+    transition: 0.7s;
+    
+}
+.slide-1 {
+    width: 20%;
+    background-color: greenyellow;
+}
+
+.container {
+    display: flex;
+}
+.img-item {
+
+    width: 90%;
+    margin: 10px ;
+    border: 3px solid #111;
+    
+}
+.slide-2 {
+    width: 80%;
+}
