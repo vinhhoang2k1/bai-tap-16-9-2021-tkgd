@@ -85,6 +85,11 @@ a {
 .nav__menu-left i {
   margin-left: 20px;
 }
+.nav .menu-btn {
+  font-size: 25px;
+  line-height: 70px;
+  display: none;
+}
 .banner {
   margin-top: 20px;
   width: 100%;
@@ -362,7 +367,7 @@ a {
 }
 
 .license {
-    margin-top: 30px;
+  margin-top: 30px;
   border-top: 1px solid #fff;
   color: var(--white-color);
 }
@@ -478,4 +483,52 @@ a {
 .l-12 {
   flex: 0 0 100%;
   max-width: 100%;
+}
+
+@media (max-width: 740px) {
+  
+.c-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+  .nav__menu-left {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: #fff;
+    color: var(--primary-color);
+    transition: 0.3s linear;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .nav__menu-left.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    box-shadow: var(--box-shadow);
+  }
+  .nav__menu-left a {
+    display: block;
+    line-height: 30px;
+  }
+  .nav__menu-left i {
+    display: none;
+  }
+  .nav .menu-btn {
+    display: block;
+  }
+  .business {
+    display: block;
+  }
+  .business__img-item-1,
+  .business__img-item-2 {
+    display: none;
+  }
+  .news .indexing .row  {
+    display: block;
+  }
+  .license .text {
+    width: 100%;
+  }
+
 }

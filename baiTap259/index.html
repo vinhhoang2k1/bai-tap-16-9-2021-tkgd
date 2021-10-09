@@ -12,14 +12,19 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap"
         rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./main.css">
+
 </head>
 
 <body>
+
     <!-- nav -->
     <section class="nav-header">
         <div class="container">
             <div class="nav">
+                <i class='menu-btn bx bx-menu'></i>
                 <div class="nav__logo">
                     <a href="#">CREVEA Inc.</a>
                 </div>
@@ -31,6 +36,7 @@
                     <a href="#contacts" class="nav__menu-link ">CONTACTS</a>
                     <i class='bx bx-search'></i>
                 </div>
+
             </div>
         </div>
     </section>
@@ -47,7 +53,7 @@
         <div class="container">
             <div class="about" id="about">
                 <div class="row">
-                    <div class="col l-6">
+                    <div class="col l-6 c-12">
                         <div class="slogan">
                             <div class="indexing">
                                 <p></p>
@@ -65,7 +71,7 @@
 
                         </div>
                     </div>
-                    <div class="col l-6">
+                    <div class="col l-6 c-12 ">
                         <div class="image bg-img"
                             style="background-image: url(https://kcorp.vn/baisosau/img/img02.jpg);"></div>
                     </div>
@@ -79,12 +85,12 @@
     <section>
         <div class="row">
             <div class="business" id="business">
-                <div class="l-6">
+                <div class="l-6 c-12">
                     <div class="business__img-left bg-img"
                         style="background-image: url(https://kcorp.vn/baisosau/img/img03.jpg);">
                     </div>
                 </div>
-                <div class="l-6">
+                <div class="l-6 c-12">
                     <div class="business__img-right bg-img"
                         style="background-image: url(https://kcorp.vn/baisosau/img/img04.jpg);">
                         <div class="slogan">
@@ -125,7 +131,7 @@
                 <h2 class="heading">Latest News</h2>
 
                 <div class="row">
-                    <div class="col l-4">
+                    <div class="col l-4 c-12">
                         <div class="news-item">
                             <div class="news__img bg-img"
                                 style="background-image: url(https://kcorp.vn/baisosau/img/img05.jpg);"></div>
@@ -136,7 +142,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col l-4">
+                    <div class="col l-4 c-12">
                         <div class="news-item">
                             <div class="news__img bg-img"
                                 style="background-image: url(https://kcorp.vn/baisosau/img/img06.jpg);"></div>
@@ -147,7 +153,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col l-4">
+                    <div class="col l-4 c-12">
                         <div class="news-item">
                             <div class="news__img bg-img"
                                 style="background-image: url(https://kcorp.vn/baisosau/img/img07.jpg);"></div>
@@ -173,7 +179,7 @@
         <div class="container">
             <div class="contacts" id="contacts">
                 <div class="row">
-                    <div class="col l-6">
+                    <div class="col l-6 c-12">
                         <div class="contact__form">
                             <div class="indexing">
                                 <p></p>
@@ -195,7 +201,7 @@
 
                         </div>
                     </div>
-                    <div class="col l-6">
+                    <div class="col l-6 c-12">
                         <div class="contact__map bg-img"
                             style="background-image: url(https://kcorp.vn/baisosau/img/img08.png);"></div>
                     </div>
@@ -211,7 +217,7 @@
         <div class="container">
             <div class="footer">
                 <div class="row">
-                    <div class="col l-4">
+                    <div class="col l-4 c-12">
                         <div class="footer-item">
                             <h2 class="heading">CREVEA</h2>
                             <div class="group">
@@ -230,7 +236,7 @@
                         </div>
 
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 c-12">
                         <div class="footer-item">
                             <h2 class="heading">CATEGORYS</h2>
                             <div class="group-link">
@@ -258,7 +264,7 @@
 
                         </div>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 c-12">
                         <div class="footer-item">
                             <h2 class="heading">LANGUAGE</h2>
                             <div class="group-link">
@@ -273,7 +279,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col l-4">
+                    <div class="col l-4 c-12">
                         <div class="footer-item">
                             <h2 class="heading">GET OUR NEWS FROM US</h2>
                             <div class="group-link">
@@ -293,10 +299,10 @@
         <div class="license">
             <div class="container">
                 <div class="text">
-                   <div class="">
-                    <i class='bx bx-copyright'></i>
-                    <p> 2018 CREVEA Inc. All rights Reserved</p>
-                   </div>
+                    <div class="">
+                        <i class='bx bx-copyright'></i>
+                        <p> 2018 CREVEA Inc. All rights Reserved</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -305,7 +311,9 @@
 
 
 
+    <script src="/baiTap259/main.js">
 
+    </script>
 </body>
 
 </html>
