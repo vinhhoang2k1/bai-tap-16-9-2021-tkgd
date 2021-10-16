@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 62.5%;
+  background-color: #333;
+  text-transform: capitalize;
+}
+a {
+  text-decoration: none;
+  color: #999;
+}
+.container {
+  padding: 1rem 9%;
+  font-size: 1.8rem;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.col {
+  margin: 0 1.5rem;
+}
+.l-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.l-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.banner .l-3 img {
+  width: 90%;
+  border-radius: 50%;
+}
+
+.nav .row {
+  height: 6rem;
+  border: 1px solid #000;
+  background-color: #222;
+  border-radius: 5px;
+}
+.nav .navbar {
+  text-align: left;
+  height: 100%;
+  line-height: 50px;
+}
+
+.nav .navbar a {
+  margin-left: 2rem;
+}
+
+.nav .navbar a:hover {
+  color: #fff;
+}
+.nav .navbar a.active {
+  color: #fff;
+  background-color: #111;
+  padding: 1.9rem;
+}
+
+.nav .search {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav .search div,
+.nav .search a {
+  margin-right: 1.5rem;
+}
+.nav .search div {
+  height: 4rem;
+  border-radius: 4px;
+  background-color: #fff;
+  width: 23rem;
+}
+.nav .search div input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  line-height: 4rem;
+  margin-left: 1rem;
+  width: 100%;
+  font-size: 2rem;
+}
+
+.nav .search a {
+  line-height: 4rem;
+  height: 4rem;
+  background-color: #fff;
+  padding: 0 1rem;
+  border-radius: 4px;
+  color: #222;
+}
+.nav .menu-icon {
+  display: none;
+}
+
+.slider-bt .slide-img {
+  text-align: center;
+}
+.slider-bt .slide-img img {
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+  color: #fff;
+}
+
+.btn {
+  color: #fff;
+  background-color: rgb(127, 224, 82);
+  padding: 1rem;
+  font-size: 1.7rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.product .l-6 img {
+  width: 100%;
+  padding: 0 1.3rem;
+}
+.product .row .l-6 .slogan  {
+    margin: 1.5rem 0;
+}
+.product .row .l-6 .slogan h2 {
+  color: yellow;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+.product .row .l-6 .slogan p {
+  text-align: start;
+  padding: 1rem 0;
+  font-size: 1.3rem;
+  color: #fff;
+  line-height: 1.6rem;
+}
+.footer {
+  padding: 1rem 0;
+  background-color: #999;
+  border-top: 2px solid rgb(197, 197, 12);
+}
+
+.footer .contact li {
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: start;
+  padding-bottom: 0.7rem;
+}
+@media (max-width: 1024px) {
+  .nav {
+    position: relative;
+  }
+  .nav .navbar {
+    position: absolute;
+    top: 100%;
+    left: 9%;
+    z-index: 99;
+    background-color: #999;
+    width: 82%;
+    overflow: hidden;
+    height: 50rem;
+    display: none;
+    border-radius: 5px;
+  }
+  .nav .search {
+    display: block;
+    position: absolute;
+    top: 500%;
+    left: 9%;
+    z-index: 99;
+    overflow: hidden;
+    padding: 0 1.5rem;
+    width: 80%;
+    display: none;
+  }
+
+  .nav .navbar.active,
+  .nav .search.active {
+    display: block;
+  }
+
+  .nav .search div {
+    width: 100%;
+  }
+
+  .nav .search a {
+    display: block;
+    width: 15rem;
+    margin-top: 1rem;
+    text-align: start;
+    background-color: yellow;
+  }
+  .nav .navbar a {
+    display: block;
+    color: #fff;
+  }
+  .nav .navbar a.active {
+    margin: 0;
+  }
+  .nav .menu-icon {
+    display: block;
+    font-size: 3.5rem;
+    color: #fff;
+    position: absolute;
+    right: 13%;
+  }
+}
+@media (max-width: 480px) {
+    .slider-bt .slide-img img  {
+        height: 200px;
+    }
+  .nav .navbar {
+    position: absolute;
+    top: 100%;
+    left: 9%;
+    z-index: 99;
+    background-color: #999;
+    width: 82%;
+    overflow: hidden;
+    height: 50rem;
+   display: none;
+  }
+  .nav .search {
+    display: block;
+    position: absolute;
+    left: 9%;
+    z-index: 99;
+    overflow: hidden;
+    padding: 0 1.5rem;
+    max-width: 100%;
+    display: none;
+  }
+
+  .nav .navbar.active,
+  .nav .search.active {
+    display: block;
+  }
+
+  .nav .search a {
+    display: block;
+    width: 15rem;
+    margin-top: 1rem;
+    text-align: start;
+    background-color: yellow;
+  }
+  .nav .navbar a {
+    display: block;
+    color: #fff;
+  }
+  .nav .navbar a.active {
+    margin: 0;
+  }
+  .c-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .nav .menu-icon {
+    display: block;
+    font-size: 3.5rem;
+    color: #fff;
+    position: absolute;
+    right: 13%;
+  }
+}
